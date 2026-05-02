@@ -163,7 +163,7 @@ The recommended structure is:
 repository/
 ├── README.md
 ├── requirements.txt
-├── CeNN_QML_TSF_Revision_Benchmark.ipynb
+├── main_reproducibility_notebook.ipynb
 ├── outputs_revision_package.zip
 └── outputs_revision/
     ├── configs/
