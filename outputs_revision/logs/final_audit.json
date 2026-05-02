@@ -1,0 +1,19 @@
+{
+  "any_synthetic_fallback": false,
+  "fallback_datasets": [],
+  "n_datasets": 4,
+  "models_in_main_results": [
+    "ARIMA",
+    "CeNN",
+    "LSTM",
+    "MLP",
+    "SeasonalNaive",
+    "TransformerEncoder"
+  ],
+  "n_metric_rows": 88,
+  "n_prediction_rows": 77088,
+  "config_path": "/kaggle/working/outputs_revision/configs/experiment_config.json",
+  "results_dir": "/kaggle/working/outputs_revision/results",
+  "tables_dir": "/kaggle/working/outputs_revision/tables",
+  "figures_dir": "/kaggle/working/outputs_revision/figures"
+}

@@ -1,0 +1,5 @@
+dataset,n_train_raw,n_val_raw,n_test_raw,n_train_windows,n_val_windows,n_test_windows,window,horizon
+energy,4200,900,900,4176,876,876,24,1
+aapl,4200,900,900,4176,876,876,24,1
+mackey_glass,4200,900,900,4176,876,876,24,1
+jena_climate,4200,900,900,4176,876,876,24,1

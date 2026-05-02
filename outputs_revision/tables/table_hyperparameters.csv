@@ -1,0 +1,19 @@
+Hyperparameter,Value
+Optimizer,Adam
+Learning rate,0.001
+Weight decay,1e-05
+Batch size,64
+Max epochs,50
+Early stopping patience,8
+Gradient clipping,max_norm=1.0
+MLP hidden size,128
+LSTM hidden size,64
+Transformer d_model,64
+Transformer heads,4
+Transformer layers,2
+CeNN cells,64
+CeNN local radius,2
+CeNN local neighbors per cell,5
+CeNN integration steps,6
+CeNN dt,0.15
+CeNN parameterization,local A/B templates with 1D ring neighborhood

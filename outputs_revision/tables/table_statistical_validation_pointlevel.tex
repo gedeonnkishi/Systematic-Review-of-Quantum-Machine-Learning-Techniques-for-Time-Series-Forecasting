@@ -1,0 +1,26 @@
+\begin{tabular}{llllrrrrrrrrrrrl}
+\toprule
+level & dataset & comparison & metric & mean_diff & ci95_low & ci95_high & block_bootstrap_ci95_low & block_bootstrap_ci95_high & paired_t_pvalue & wilcoxon_pvalue & dm_statistic & dm_pvalue & cohens_d & n & interpretation \\
+\midrule
+point_level & aapl & CeNN vs LSTM & absolute_error_per_test_point & 0.001258 & 0.000988 & 0.001528 & 0.000771 & 0.001815 & 0.000000 & 0.000000 & 9.140487 & 0.000000 & 0.308828 & 876 & negative mean_diff favors CeNN \\
+point_level & aapl & CeNN vs TransformerEncoder & absolute_error_per_test_point & 0.000488 & 0.000267 & 0.000709 & -0.000005 & 0.000913 & 0.000016 & 0.000001 & 4.333738 & 0.000016 & 0.146423 & 876 & negative mean_diff favors CeNN \\
+point_level & aapl & CeNN vs MLP & absolute_error_per_test_point & 0.000920 & 0.000670 & 0.001169 & 0.000431 & 0.001451 & 0.000000 & 0.000000 & 7.224504 & 0.000000 & 0.244093 & 876 & negative mean_diff favors CeNN \\
+point_level & aapl & CeNN vs ARIMA & absolute_error_per_test_point & -0.191726 & -0.196852 & -0.186600 & -0.215147 & -0.168365 & 0.000000 & 0.000000 & -73.413403 & 0.000000 & -2.480409 & 876 & negative mean_diff favors CeNN \\
+point_level & aapl & CeNN vs SeasonalNaive & absolute_error_per_test_point & -0.021460 & -0.023104 & -0.019816 & -0.027091 & -0.016507 & 0.000000 & 0.000000 & -25.625960 & 0.000000 & -0.865821 & 876 & negative mean_diff favors CeNN \\
+point_level & energy & CeNN vs MLP & absolute_error_per_test_point & -11.089013 & -26.353406 & 4.175380 & -35.433779 & 10.827651 & 0.154279 & 0.036757 & -1.425813 & 0.154279 & -0.048174 & 876 & negative mean_diff favors CeNN \\
+point_level & energy & CeNN vs TransformerEncoder & absolute_error_per_test_point & -98.514615 & -115.705520 & -81.323711 & -120.350495 & -76.619286 & 0.000000 & 0.000000 & -11.247375 & 0.000000 & -0.380014 & 876 & negative mean_diff favors CeNN \\
+point_level & energy & CeNN vs LSTM & absolute_error_per_test_point & -29.150056 & -46.745864 & -11.554249 & -48.135429 & -10.008211 & 0.001192 & 0.000645 & -3.251468 & 0.001192 & -0.109857 & 876 & negative mean_diff favors CeNN \\
+point_level & energy & CeNN vs ARIMA & absolute_error_per_test_point & -9179.131032 & -9477.263227 & -8880.998838 & -9882.356760 & -8460.915636 & 0.000000 & 0.000000 & -60.428517 & 0.000000 & -2.041690 & 876 & negative mean_diff favors CeNN \\
+point_level & energy & CeNN vs SeasonalNaive & absolute_error_per_test_point & -1663.134811 & -1799.904113 & -1526.365508 & -2076.067737 & -1279.967992 & 0.000000 & 0.000000 & -23.866463 & 0.000000 & -0.806373 & 876 & negative mean_diff favors CeNN \\
+point_level & jena_climate & CeNN vs MLP & absolute_error_per_test_point & 0.169410 & 0.132626 & 0.206194 & 0.085918 & 0.274726 & 0.000000 & 0.000000 & 9.039257 & 0.000000 & 0.305408 & 876 & negative mean_diff favors CeNN \\
+point_level & jena_climate & CeNN vs TransformerEncoder & absolute_error_per_test_point & 0.082415 & 0.059757 & 0.105073 & 0.041015 & 0.133097 & 0.000000 & 0.000000 & 7.138893 & 0.000000 & 0.241201 & 876 & negative mean_diff favors CeNN \\
+point_level & jena_climate & CeNN vs LSTM & absolute_error_per_test_point & 0.131765 & 0.100723 & 0.162807 & 0.062069 & 0.217964 & 0.000000 & 0.000000 & 8.331023 & 0.000000 & 0.281479 & 876 & negative mean_diff favors CeNN \\
+point_level & jena_climate & CeNN vs ARIMA & absolute_error_per_test_point & -3.966351 & -4.194088 & -3.738613 & -4.522165 & -3.457661 & 0.000000 & 0.000000 & -34.182681 & 0.000000 & -1.154926 & 876 & negative mean_diff favors CeNN \\
+point_level & jena_climate & CeNN vs SeasonalNaive & absolute_error_per_test_point & -2.206788 & -2.358035 & -2.055542 & -2.736980 & -1.801497 & 0.000000 & 0.000000 & -28.636760 & 0.000000 & -0.967546 & 876 & negative mean_diff favors CeNN \\
+point_level & mackey_glass & CeNN vs MLP & absolute_error_per_test_point & 0.000271 & 0.000202 & 0.000339 & 0.000140 & 0.000407 & 0.000000 & 0.000000 & 7.765259 & 0.000000 & 0.262364 & 876 & negative mean_diff favors CeNN \\
+point_level & mackey_glass & CeNN vs TransformerEncoder & absolute_error_per_test_point & -0.000480 & -0.000566 & -0.000394 & -0.000621 & -0.000332 & 0.000000 & 0.000000 & -10.940990 & 0.000000 & -0.369662 & 876 & negative mean_diff favors CeNN \\
+point_level & mackey_glass & CeNN vs LSTM & absolute_error_per_test_point & -0.000495 & -0.000589 & -0.000400 & -0.000652 & -0.000348 & 0.000000 & 0.000000 & -10.251770 & 0.000000 & -0.346375 & 876 & negative mean_diff favors CeNN \\
+point_level & mackey_glass & CeNN vs ARIMA & absolute_error_per_test_point & -0.752118 & -0.767635 & -0.736601 & -0.800781 & -0.698843 & 0.000000 & 0.000000 & -95.129485 & 0.000000 & -3.214127 & 876 & negative mean_diff favors CeNN \\
+point_level & mackey_glass & CeNN vs SeasonalNaive & absolute_error_per_test_point & -0.379555 & -0.393906 & -0.365204 & -0.407277 & -0.351782 & 0.000000 & 0.000000 & -51.908853 & 0.000000 & -1.753838 & 876 & negative mean_diff favors CeNN \\
+\bottomrule
+\end{tabular}

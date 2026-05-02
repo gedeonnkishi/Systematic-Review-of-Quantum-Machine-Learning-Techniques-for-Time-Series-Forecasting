@@ -1,0 +1,42 @@
+\begin{tabular}{llllrrrrrrrrl}
+\toprule
+level & dataset & comparison & metric & mean_diff & ci95_low & ci95_high & paired_t_pvalue & wilcoxon_pvalue & dm_pvalue & cohens_d & n & interpretation \\
+\midrule
+run_level & aapl & CeNN vs TransformerEncoder & RMSE & -0.000050 & -0.002623 & 0.002523 & 0.959469 & 1.000000 & NaN & -0.024183 & 5 & negative mean_diff favors CeNN \\
+run_level & aapl & CeNN vs TransformerEncoder & MAE & 0.000067 & -0.002282 & 0.002415 & 0.940939 & 0.812500 & NaN & 0.035263 & 5 & negative mean_diff favors CeNN \\
+run_level & aapl & CeNN vs TransformerEncoder & MAPE & -0.001671 & -0.780476 & 0.777134 & 0.995532 & 0.625000 & NaN & -0.002664 & 5 & negative mean_diff favors CeNN \\
+run_level & aapl & CeNN vs LSTM & RMSE & 0.001997 & 0.000170 & 0.003824 & 0.038611 & 0.062500 & NaN & 1.357049 & 5 & negative mean_diff favors CeNN \\
+run_level & aapl & CeNN vs LSTM & MAE & 0.001883 & 0.000077 & 0.003690 & 0.044375 & 0.062500 & NaN & 1.294334 & 5 & negative mean_diff favors CeNN \\
+run_level & aapl & CeNN vs LSTM & MAPE & 0.557831 & 0.004481 & 1.111182 & 0.048865 & 0.062500 & NaN & 1.251719 & 5 & negative mean_diff favors CeNN \\
+run_level & aapl & CeNN vs MLP & RMSE & 0.001515 & -0.000264 & 0.003295 & 0.077281 & 0.062500 & NaN & 1.057445 & 5 & negative mean_diff favors CeNN \\
+run_level & aapl & CeNN vs MLP & MAE & 0.001411 & -0.000438 & 0.003260 & 0.101447 & 0.125000 & NaN & 0.947682 & 5 & negative mean_diff favors CeNN \\
+run_level & aapl & CeNN vs MLP & MAPE & 0.404739 & -0.171498 & 0.980975 & 0.122939 & 0.125000 & NaN & 0.872123 & 5 & negative mean_diff favors CeNN \\
+run_level & energy & CeNN vs TransformerEncoder & RMSE & -79.667622 & -152.742535 & -6.592708 & 0.038898 & 0.062500 & NaN & -1.353685 & 5 & negative mean_diff favors CeNN \\
+run_level & energy & CeNN vs TransformerEncoder & MAE & -81.026306 & -150.008389 & -12.044224 & 0.031045 & 0.062500 & NaN & -1.458458 & 5 & negative mean_diff favors CeNN \\
+run_level & energy & CeNN vs TransformerEncoder & MAPE & -0.311782 & -0.588646 & -0.034917 & 0.035301 & 0.062500 & NaN & -1.398260 & 5 & negative mean_diff favors CeNN \\
+run_level & energy & CeNN vs LSTM & RMSE & -33.678279 & -54.204676 & -13.151882 & 0.010375 & 0.062500 & NaN & -2.037236 & 5 & negative mean_diff favors CeNN \\
+run_level & energy & CeNN vs LSTM & MAE & -15.154523 & -45.201127 & 14.892082 & 0.234004 & 0.312500 & NaN & -0.626255 & 5 & negative mean_diff favors CeNN \\
+run_level & energy & CeNN vs LSTM & MAPE & -0.064573 & -0.186511 & 0.057365 & 0.215433 & 0.312500 & NaN & -0.657534 & 5 & negative mean_diff favors CeNN \\
+run_level & energy & CeNN vs MLP & RMSE & -28.391986 & -167.368429 & 110.584456 & 0.600889 & 0.625000 & NaN & -0.253664 & 5 & negative mean_diff favors CeNN \\
+run_level & energy & CeNN vs MLP & MAE & -37.746240 & -180.619029 & 105.126549 & 0.503914 & 1.000000 & NaN & -0.328041 & 5 & negative mean_diff favors CeNN \\
+run_level & energy & CeNN vs MLP & MAPE & -0.145152 & -0.726169 & 0.435865 & 0.526093 & 1.000000 & NaN & -0.310197 & 5 & negative mean_diff favors CeNN \\
+run_level & jena_climate & CeNN vs TransformerEncoder & RMSE & 0.120436 & 0.014174 & 0.226699 & 0.034621 & 0.062500 & NaN & 1.407284 & 5 & negative mean_diff favors CeNN \\
+run_level & jena_climate & CeNN vs TransformerEncoder & MAE & 0.094266 & 0.014748 & 0.173784 & 0.030177 & 0.062500 & NaN & 1.471945 & 5 & negative mean_diff favors CeNN \\
+run_level & jena_climate & CeNN vs TransformerEncoder & MAPE & 0.403277 & 0.053140 & 0.753414 & 0.032969 & 0.062500 & NaN & 1.430110 & 5 & negative mean_diff favors CeNN \\
+run_level & jena_climate & CeNN vs LSTM & RMSE & 0.204264 & 0.108684 & 0.299844 & 0.004044 & 0.062500 & NaN & 2.653552 & 5 & negative mean_diff favors CeNN \\
+run_level & jena_climate & CeNN vs LSTM & MAE & 0.148181 & 0.088241 & 0.208121 & 0.002359 & 0.062500 & NaN & 3.069594 & 5 & negative mean_diff favors CeNN \\
+run_level & jena_climate & CeNN vs LSTM & MAPE & 0.599421 & 0.352992 & 0.845851 & 0.002507 & 0.062500 & NaN & 3.020252 & 5 & negative mean_diff favors CeNN \\
+run_level & jena_climate & CeNN vs MLP & RMSE & 0.227617 & 0.124412 & 0.330821 & 0.003603 & 0.062500 & NaN & 2.738482 & 5 & negative mean_diff favors CeNN \\
+run_level & jena_climate & CeNN vs MLP & MAE & 0.170126 & 0.105850 & 0.234402 & 0.001826 & 0.062500 & NaN & 3.286435 & 5 & negative mean_diff favors CeNN \\
+run_level & jena_climate & CeNN vs MLP & MAPE & 0.672243 & 0.425699 & 0.918787 & 0.001632 & 0.062500 & NaN & 3.385606 & 5 & negative mean_diff favors CeNN \\
+run_level & mackey_glass & CeNN vs TransformerEncoder & RMSE & -0.000404 & -0.001025 & 0.000218 & 0.145954 & 0.125000 & NaN & -0.805734 & 5 & negative mean_diff favors CeNN \\
+run_level & mackey_glass & CeNN vs TransformerEncoder & MAE & -0.000366 & -0.000863 & 0.000131 & 0.110130 & 0.125000 & NaN & -0.915213 & 5 & negative mean_diff favors CeNN \\
+run_level & mackey_glass & CeNN vs TransformerEncoder & MAPE & -0.055795 & -0.131654 & 0.020064 & 0.110678 & 0.125000 & NaN & -0.913259 & 5 & negative mean_diff favors CeNN \\
+run_level & mackey_glass & CeNN vs LSTM & RMSE & -0.000340 & -0.001010 & 0.000330 & 0.231703 & 0.312500 & NaN & -0.629993 & 5 & negative mean_diff favors CeNN \\
+run_level & mackey_glass & CeNN vs LSTM & MAE & -0.000253 & -0.000754 & 0.000248 & 0.233234 & 0.312500 & NaN & -0.627503 & 5 & negative mean_diff favors CeNN \\
+run_level & mackey_glass & CeNN vs LSTM & MAPE & -0.017989 & -0.068549 & 0.032570 & 0.379138 & 0.437500 & NaN & -0.441792 & 5 & negative mean_diff favors CeNN \\
+run_level & mackey_glass & CeNN vs MLP & RMSE & 0.000811 & 0.000448 & 0.001173 & 0.003421 & 0.062500 & NaN & 2.777179 & 5 & negative mean_diff favors CeNN \\
+run_level & mackey_glass & CeNN vs MLP & MAE & 0.000628 & 0.000297 & 0.000958 & 0.006188 & 0.062500 & NaN & 2.359385 & 5 & negative mean_diff favors CeNN \\
+run_level & mackey_glass & CeNN vs MLP & MAPE & 0.062813 & 0.019124 & 0.106503 & 0.016241 & 0.062500 & NaN & 1.785160 & 5 & negative mean_diff favors CeNN \\
+\bottomrule
+\end{tabular}

@@ -1,0 +1,5 @@
+dataset,source,target_column,is_synthetic_fallback,n_points
+energy,/kaggle/input/datasets/robikscube/hourly-energy-consumption/PJME_hourly.csv,PJME_MW,False,6000
+aapl,/kaggle/input/datasets/meetnagadia/apple-stock-price-from-19802021/AAPL.csv,Adj Close,False,6000
+mackey_glass,deterministic generator,x,False,6000
+jena_climate,/kaggle/input/datasets/mnassrib/jena-climate/jena_climate_2009_2016.csv,T (degC),False,6000
