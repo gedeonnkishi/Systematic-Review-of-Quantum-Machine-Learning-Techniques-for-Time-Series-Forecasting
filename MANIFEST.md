@@ -31,5 +31,5 @@
 │   ├── teacher_selection.png
 │   └── main_results.png
 └── paper/
-    └── manuscript_review_version_18.pdf
+    └── manuscript_review_version.pdf
 ```
