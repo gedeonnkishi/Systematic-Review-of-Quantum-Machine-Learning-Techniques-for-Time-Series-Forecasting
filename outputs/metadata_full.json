@@ -1,0 +1,113 @@
+{
+  "notebook_version": "v11_2_final_fullrun_ready",
+  "run_mode": "full",
+  "config": {
+    "max_rows": 20000,
+    "window": 48,
+    "horizon": 24,
+    "train_frac": 0.7,
+    "val_frac": 0.15,
+    "batch_size": 256,
+    "epochs": 80,
+    "patience": 12,
+    "seeds": [
+      42,
+      123,
+      2024,
+      7,
+      99
+    ],
+    "qelm_qubits": 4,
+    "qelm_layers": 3,
+    "qelm_feature_mode": "z_zz",
+    "teacher_reject_ratio": 1.05,
+    "weak_teacher_weight": 0.15,
+    "cenn_cells": 128,
+    "cenn_layers": 4,
+    "cenn_kernel": 5,
+    "teacher_folds": 5,
+    "teacher_max": 8000,
+    "teacher_alpha_grid": [
+      0.0001,
+      0.001,
+      0.01,
+      0.1
+    ],
+    "teacher_layer_grid": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "teacher_topk_report": 8,
+    "scale_cells": [
+      16,
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "scale_repeats": 3,
+    "latency_reps": 10,
+    "calibrate": true,
+    "calib_epochs": 20
+  },
+  "active_datasets": [
+    "energy",
+    "aapl",
+    "jena",
+    "mackey_glass"
+  ],
+  "qelm": {
+    "family": "QELM (Quantum Extreme Learning Machine)",
+    "n_qubits": 4,
+    "default_layers": 3,
+    "feature_mode": "z_zz",
+    "teacher_reject_ratio": 1.05,
+    "weak_teacher_weight": 0.15,
+    "layer_grid": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "alpha_grid": [
+      0.0001,
+      0.001,
+      0.01,
+      0.1
+    ],
+    "hilbert_dim": 16,
+    "quantum_cost": "O(2^4) = O(16) per sample",
+    "trainable_params": "readout (Ridge) only",
+    "fixed_params": "rotation angles (random fixed)",
+    "features": "enriched observable vector: <Z_i> and <Z_iZ_j>"
+  },
+  "cenn": {
+    "cells": 128,
+    "layers": 4,
+    "kernel": 5,
+    "complexity": "O(2560)",
+    "emulation_head": "predicts enriched QELM observables; dimension determined by teacher feature mode"
+  },
+  "outputs": {
+    "benchmark": "outputs_v11_2_final_fullrun_ready/benchmark_full.csv",
+    "summary": "outputs_v11_2_final_fullrun_ready/summary_full.csv",
+    "statistical_comparison": "outputs_v11_2_final_fullrun_ready/statistical_comparison_full.csv",
+    "emulation_fidelity": "outputs_v11_2_final_fullrun_ready/emulation_fidelity_full.csv",
+    "emulation_summary": "outputs_v11_2_final_fullrun_ready/emulation_summary_full.csv",
+    "ablation": "outputs_v11_2_final_fullrun_ready/ablation_full.csv",
+    "teacher_search": "outputs_v11_2_final_fullrun_ready/teacher_selection_candidates_full.csv",
+    "scalability": "outputs_v11_2_final_fullrun_ready/scalability_full.csv",
+    "linear_fit": "outputs_v11_2_final_fullrun_ready/linear_fit_full.csv",
+    "quantum_theoretical": "outputs_v11_2_final_fullrun_ready/quantum_memory_theoretical.csv",
+    "main_results_png": "outputs_v11_2_final_fullrun_ready/main_results.png",
+    "scalability_png": "outputs_v11_2_final_fullrun_ready/scalability.png",
+    "benchmark_heatmap_png": "outputs_v11_2_final_fullrun_ready/benchmark_mase_heatmap.png",
+    "teacher_selection_png": "outputs_v11_2_final_fullrun_ready/teacher_selection.png",
+    "ablation_png": "outputs_v11_2_final_fullrun_ready/ablation_overview.png",
+    "architecture_png": "outputs_v11_2_final_fullrun_ready/architecture_overview.png",
+    "emulation_comparison_png": "outputs_v11_2_final_fullrun_ready/emulation_model_comparison.png"
+  }
+}
