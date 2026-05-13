@@ -1,0 +1,14 @@
+run_mode: full
+window: 48
+horizon: 24
+split_ratios: [0.70, 0.15, 0.15]
+seeds: [42, 123, 2024, 7, 99]
+batch_size: 256
+primary_metric: MASE
+supporting_metrics: [MAE, RMSE, R2, sMAPE, WAPE, DirectionalAccuracy]
+efficiency_metrics: [fit_time_sec, inference_ms_per_sample, param_count]
+emulation_metrics: [Pearson_correlation, distributional_divergence, spectral_distance, autocorrelation_distance, observable_errors]
+datasets: [Energy, AAPL, Jena, ETTh1, ETTm2, ExchangeRate]
+models: [Persistence, MovingAverage, MLP, LSTM, Transformer, N-HiTS, N-BEATS, QELM, CeNN_NS, CeNN_Emulator]
+no_synthetic_data: true
+normalization: train_split_only
