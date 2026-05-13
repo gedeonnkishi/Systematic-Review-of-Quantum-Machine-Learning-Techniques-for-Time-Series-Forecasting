@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+title: "Quantum-Inspired Time Series Forecasting: A Systematic Review and Neuro-Symbolic Emulation Framework"
+authors:
+  - family-names: "Nkishi Djenga"
+    given-names: "Gédéon"
+  - family-names: "Kambale"
+    given-names: "Witesyavwirwa Vianney"
+  - family-names: "Kambale"
+    given-names: "Exaucé Maruba"
+  - family-names: "Bisuta Bieto"
+    given-names: "Hugues"
+  - family-names: "Kyamakya"
+    given-names: "Kyandoghere"
+repository-code: "https://github.com/gedeonnkishi/Systematic-Review-of-Quantum-Machine-Learning-Techniques-for-Time-Series-Forecasting"
+message: "If you use this repository, please cite the associated manuscript."
