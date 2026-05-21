@@ -109,52 +109,63 @@ The uploaded `results.zip` contained exported results, figures, and CSV outputs,
 Before final GitHub publication, replace `notebooks/neurosymbolic-cenn-qml-tsf-benchmark.ipynb` with the exact Kaggle/Colab notebook used to generate the results, if available.
 
 
-## Quick result snapshot
+## Core Evaluation Diagnostics
 
-### Average MASE rank by model
+This panoramic figure presents the prediction diagnostics across the six real-world datasets covered in this study (Energy, AAPL, Jena, ETTh1, ETTm2, ExchangeRate). It overlays our framework's predictions (CeNN_Emulator, CeNN_NS) with the ground truth (True) and key benchmark models (LSTM, Transformer, QELM), demonstrating the functional emulation fidelity.
 
-| model         |   rank_MASE |
-|:--------------|------------:|
-| MLP           |     3       |
-| N-HiTS        |     3.5     |
-| LSTM          |     4.33333 |
-| N-BEATS       |     4.5     |
-| Transformer   |     5.16667 |
-| CeNN_Emulator |     5.66667 |
-| CeNN_NS       |     5.66667 |
-| Persistence   |     7       |
-| QELM          |     7.83333 |
-| MovingAverage |     8.33333 |
+<p align="center">
+  <img src="outputs/full_run/figures/core_article/09_prediction_diagnostics_panel.png" alt="Prediction Diagnostics Panel" width="90%">
+</p>
 
-### Dataset manifest
+---
 
-| name         |   used_length | target_col   | transform   |
-|:-------------|--------------:|:-------------|:------------|
-| Energy       |         20000 | PJME_MW      | identity    |
-| AAPL         |          2517 | Close/Last   | log_return  |
-| Jena         |         20000 | T (degC)     | identity    |
-| ETTh1        |         17420 | OT           | identity    |
-| ETTm2        |         20000 | OT           | identity    |
-| ExchangeRate |          7588 | OT           | identity    |
+## Quick Result Snapshot
 
-### Functional-emulation summary
+### Dataset Manifest
 
-| dataset      | model         |   emul_Pearson_r_mean |   observable_Pearson_r_mean |
-|:-------------|:--------------|----------------------:|----------------------------:|
-| AAPL         | CeNN_Emulator |             0.0685806 |                    0.687264 |
-| AAPL         | CeNN_NS       |             0.0675527 |                    0.680065 |
-| ETTh1        | CeNN_Emulator |             0.975064  |                    0.994723 |
-| ETTh1        | CeNN_NS       |             0.972277  |                    0.992033 |
-| ETTm2        | CeNN_Emulator |             0.164087  |                    0.908964 |
-| ETTm2        | CeNN_NS       |             0.113736  |                    0.928238 |
-| Energy       | CeNN_Emulator |             0.978437  |                    0.988634 |
-| Energy       | CeNN_NS       |             0.975564  |                    0.985983 |
-| ExchangeRate | CeNN_Emulator |             0.175783  |                    0.905146 |
-| ExchangeRate | CeNN_NS       |             0.168842  |                    0.891726 |
-| Jena         | CeNN_Emulator |             0.498423  |                    0.994812 |
-| Jena         | CeNN_NS       |             0.495092  |                    0.995411 |
+| name | used_length | target_col | transform |
+|:---|---:|:---|:---|
+| Energy | 20000 | PJME_MW | identity |
+| AAPL | 2517 | Close/Last | log_return |
+| Jena | 20000 | T (degC) | identity |
+| ETTh1 | 17420 | OT | identity |
+| ETTm2 | 20000 | OT | identity |
+| ExchangeRate | 7588 | OT | identity |
 
+### Average MASE Rank by Model
 
-## Scope limitation
+| model | rank_MASE |
+|:---|---:|
+| MLP | 3 |
+| N-HiTS | 3.5 |
+| LSTM | 4.33333 |
+| N-BEATS | 4.5 |
+| Transformer | 5.16667 |
+| CeNN_Emulator | 5.66667 |
+| CeNN_NS | 5.66667 |
+| Persistence | 7 |
+| QELM | 7.83333 |
+| MovingAverage | 8.33333 |
+
+### Functional Emulation Summary
+
+| dataset | model | emul_Pearson_r_mean | observable_Pearson_r_mean |
+|:---|:---|---:|---:|
+| AAPL | CeNN_Emulator | 0.0685806 | 0.687264 |
+| AAPL | CeNN_NS | 0.0675527 | 0.680065 |
+| ETTh1 | CeNN_Emulator | 0.975064 | 0.994723 |
+| ETTh1 | CeNN_NS | 0.972277 | 0.992033 |
+| ETTm2 | CeNN_Emulator | 0.164087 | 0.908964 |
+| ETTm2 | CeNN_NS | 0.113736 | 0.928238 |
+| Energy | CeNN_Emulator | 0.978437 | 0.988634 |
+| Energy | CeNN_NS | 0.975564 | 0.985983 |
+| ExchangeRate | CeNN_Emulator | 0.175783 | 0.905146 |
+| ExchangeRate | CeNN_NS | 0.168842 | 0.891726 |
+| Jena | CeNN_Emulator | 0.498423 | 0.994812 |
+| Jena | CeNN_NS | 0.495092 | 0.995411 |
+
+---
+
+## Scope Limitation
 
 The package supports inspection and controlled replication of the reported proof-of-concept benchmark. It does not establish quantum computational advantage, physical quantum equivalence, universal forecasting superiority, or deployment readiness.
