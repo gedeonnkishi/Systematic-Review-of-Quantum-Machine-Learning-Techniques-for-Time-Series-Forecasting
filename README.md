@@ -25,6 +25,7 @@ The repository is organized for reviewer inspection and controlled replication o
 .
 ├── README.md
 ├── REVIEWER_CHECKLIST.md
+├── LICENSE
 ├── CITATION.cff
 ├── requirements.txt
 ├── environment.yml
