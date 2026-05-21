@@ -40,7 +40,7 @@ The repository is organized for reviewer inspection and controlled replication o
 │   └── reviewer_response_repository_text.md
 ├── notebooks/
 │   ├── neurosymbolic-cenn-qml-tsf-benchmark.ipynb
-│   └── reproduce_results_from_outputs.ipynb
+│   
 ├── outputs/
 │   └── full_run/
 │       ├── benchmark_full.csv
